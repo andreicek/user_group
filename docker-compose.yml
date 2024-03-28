@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  db:
+    image: postgres:15.3-alpine
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+    ports:
+      - "5434:5432"
